@@ -1,0 +1,17 @@
+entity Pessoa {
+	nome String,
+    idade String,
+    nascimento LocalDate
+
+}
+
+entity Telefone {
+	ddd String,
+    numero String
+
+}
+
+relationship OneToMany {
+	Pessoa{telefones} to Telefone{pessoa}
+
+}

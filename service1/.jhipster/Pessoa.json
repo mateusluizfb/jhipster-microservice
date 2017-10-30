@@ -1,0 +1,30 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "telefones",
+            "otherEntityName": "telefone",
+            "otherEntityRelationshipName": "pessoa"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "nome",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "idade",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "nascimento",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "changelogDate": "20171030164408",
+    "entityTableName": "pessoa",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no"
+}
